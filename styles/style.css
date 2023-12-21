@@ -79,7 +79,7 @@ video {
 
 .result__video-container {
   position: relative;
-  margin: 0 0 11px;
+  margin: 0 0 16px;
   width: 711px;
   height: 386px;
   inline-size: 711px;
@@ -301,7 +301,12 @@ video {
   font-size: 30px;
   line-height: 1;
   text-transform: uppercase;
-  hyphens: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 200px;
+ 
+  /* hyphens: auto;  Убрал */
 }
 
 .content__video-card-description {
